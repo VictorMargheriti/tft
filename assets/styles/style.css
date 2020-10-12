@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "The Historia Demo";
+  src: url(../fonts/The\ Historia\ Demo.woff) format("woff2"),
+       url(../fonts/The\ Historia\ Demo.woff2) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #eee;
+}
+
+body {
+  background: url(../images/bg.jpg);
+  margin: 0;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+h1 {
+  font-size: 8rem;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  font-family: "The Historia Demo", sans-serif;
+  background: linear-gradient(to top, #fcff9e, #c67700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  user-select: none;
+}
+
+p {
+  font-size: 17px;
+}
+
+img {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.topcontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.botcontainer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.card {
+  background: black;
+  margin: 10px;
+  min-height: 375px;
+  max-width: 400px;
+  border: none;
+  cursor: pointer;
+}
+
+.card-img-top {
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.card-body {
+  background: url(https://images.pond5.com/super-slowmotion-shot-color-powder-footage-105539362_iconl.jpeg);
+  color: white;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.card-front,
+.card-back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-front {
+  height: 100%;
+  transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  position: absolute;
+  text-align: center;
+  right: 0;
+  left: 0;
+  top: 10px;
+  color: #20263f;
+}
+
+.flip-card {
+  min-height: 380px;
+  background-color: transparent;
+  perspective: 1000px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-inner {
+  min-height: 380px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:active .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  color: black;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+#replace {
+  color: orangered;
+}
+
+#replace:hover {
+  cursor: pointer;
+}
+
+#phase {
+  text-decoration: uppercase;
+  font-weight: 700;
+}
+
+footer p {
+  font-family: calibri;
+}
+
+footer p:nth-child(1) {
+  font-size: 30px;
+  font-weight:bold;
+  color: #7e7d7d;
+  line-height:10px;
+}
+
+footer p:nth-child(2) {
+  font-size: 16px;
+  color:#7e7d7d;
+  width:600px;
+  text-align: center;
+}
+
+footer {
+  height:300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.social-icons a {
+  width:40px;
+  height:40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#e6e3e3;
+  margin:20px 10px;
+  border-radius:50%;
+}
+
+.social-icons {
+  display: flex;
+}
+.social-icons i,.social i{
+  color:#000000;
+}
+
+.social-icons a:hover {
+  text-decoration: none;
+  background-color:#000000;
+  box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+  transition:all ease 0.5s;
+}
+
+.social-icons a:hover i,
+.social a:hover i {
+  color:#FFFFFF;
+  transition:all ease 0.5s;
+}
+ 
+.copyright {
+  text-align: center;
+  color:#565555;
+  font-size: 12px;
+  position: absolute;
+  left:50%;
+  bottom:10px;
+  transform: translateX(-50%);
+}
+
+.copyright i {
+  color: red;
+}
+
+#chikkin {
+  color: orange;
+}
+
+#placid {
+  color: greenyellow;
+}

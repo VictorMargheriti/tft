@@ -1,0 +1,8 @@
+to do:
+1 card-body text align, font adjustments, add icons
+2 animate logo
+3 add flip cards - items and strategy in back
+4 add 4 more cards and animate right to left flip
+5 footer section
+6 draggable cards?
+7 fix UI issues // remove selectable text and draggable image
